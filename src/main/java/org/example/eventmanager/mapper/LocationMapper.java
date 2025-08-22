@@ -11,9 +11,13 @@ import org.mapstruct.MappingTarget;
 @Mapper(componentModel = "spring")
 public interface LocationMapper {
     Location toLocationFromDto(LocationDto locationDto);
+
     LocationEntity toEntityFromLocation(Location location);
+
     Location toLocationFromEntity(LocationEntity locationEntity);
+
     LocationDto toDtoFromLocation(Location location);
-    @Mapping(target = "id", ignore = true) // если id нельзя менять
+
+    @Mapping(target = "id", ignore = true)
     void updateEntityFromLocation(Location location, @MappingTarget LocationEntity entity);
 }
