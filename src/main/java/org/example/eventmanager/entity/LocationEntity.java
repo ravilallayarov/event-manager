@@ -10,11 +10,12 @@ public class LocationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    @Column(nullable = false)
+    @Column(name = "name", nullable = false)
     private String name;
-    @Column(nullable = false)
+    @Column(name = "address", nullable = false)
     private String address;
-    @Column(nullable = false)
+    @Column(name = "capacity", nullable = false)
     private Integer capacity;
+    @Column(name = "description")
     private String description;
 }
