@@ -55,9 +55,12 @@ public class UserService {
     }
 
     public User findById(Long id) {
+        return userMapper.toUser(findEntityById(id));
+    }
+
+    public UserEntity findEntityById(Long id) {
         log.info("trying to find a user by id: {}", id);
-        UserEntity userEntity = userRepository.findById(id).orElseThrow(() ->
+        return userRepository.findById(id).orElseThrow(() ->
                 new NotFoundException("User with id: " + id + " not found"));
-        return userMapper.toUser(userEntity);
     }
 }

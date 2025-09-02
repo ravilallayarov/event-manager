@@ -1,13 +1,13 @@
-package org.example.eventmanager.service;
+package org.example.eventmanager.location.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.eventmanager.entity.LocationEntity;
+import org.example.eventmanager.location.entity.LocationEntity;
 import org.example.eventmanager.exception.InvalidCapacityException;
 import org.example.eventmanager.exception.NotFoundException;
-import org.example.eventmanager.mapper.LocationMapper;
-import org.example.eventmanager.model.Location;
-import org.example.eventmanager.repository.LocationRepository;
+import org.example.eventmanager.location.mapper.LocationMapper;
+import org.example.eventmanager.location.model.Location;
+import org.example.eventmanager.location.repository.LocationRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -67,7 +67,7 @@ public class LocationService {
         return locationMapper.toLocationFromEntity(entity);
     }
 
-    private LocationEntity findEntityById(Long id) {
+    public LocationEntity findEntityById(Long id) {
         log.info("trying to find location by id: {}", id);
         LocationEntity entity = locationRepository.findById(id)
                 .orElseThrow(() -> {

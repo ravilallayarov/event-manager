@@ -1,4 +1,4 @@
-package org.example.eventmanager.entity;
+package org.example.eventmanager.location.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package org.example.eventmanager.dto;
+package org.example.eventmanager.location.dto;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
