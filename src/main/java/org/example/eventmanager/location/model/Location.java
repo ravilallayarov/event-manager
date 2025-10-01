@@ -1,4 +1,4 @@
-package org.example.eventmanager.model;
+package org.example.eventmanager.location.model;
 
 
 import lombok.Data;

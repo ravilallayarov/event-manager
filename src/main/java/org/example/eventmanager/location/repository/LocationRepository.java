@@ -1,6 +1,6 @@
-package org.example.eventmanager.repository;
+package org.example.eventmanager.location.repository;
 
-import org.example.eventmanager.entity.LocationEntity;
+import org.example.eventmanager.location.entity.LocationEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,11 +1,11 @@
-package org.example.eventmanager.controller;
+package org.example.eventmanager.location.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.example.eventmanager.dto.LocationDto;
-import org.example.eventmanager.mapper.LocationMapper;
-import org.example.eventmanager.model.Location;
-import org.example.eventmanager.service.LocationService;
+import org.example.eventmanager.location.dto.LocationDto;
+import org.example.eventmanager.location.mapper.LocationMapper;
+import org.example.eventmanager.location.model.Location;
+import org.example.eventmanager.location.service.LocationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

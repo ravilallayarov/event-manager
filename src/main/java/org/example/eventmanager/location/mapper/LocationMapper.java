@@ -1,9 +1,9 @@
-package org.example.eventmanager.mapper;
+package org.example.eventmanager.location.mapper;
 
 
-import org.example.eventmanager.dto.LocationDto;
-import org.example.eventmanager.entity.LocationEntity;
-import org.example.eventmanager.model.Location;
+import org.example.eventmanager.location.dto.LocationDto;
+import org.example.eventmanager.location.entity.LocationEntity;
+import org.example.eventmanager.location.model.Location;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
